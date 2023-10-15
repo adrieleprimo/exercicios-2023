@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { AnaliseSensorialComponent } from './analise-sensorial/analise-sensorial.component';
 
 
 
@@ -10,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
   declarations: [
     AppComponent,
     HeaderComponent,
+    AnaliseSensorialComponent,
   ],
   imports: [
     BrowserModule
