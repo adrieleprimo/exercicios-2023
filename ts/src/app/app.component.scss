@@ -374,8 +374,7 @@ i.fa-star {
   color: rgba(237, 120, 57, 1);
 }
 
-//instruções de como trabalhar
-
+//instruções do trabalho
 .detalhes {
   position: absolute;
   font-family: "Roboto", sans-serif;
@@ -389,17 +388,17 @@ i.fa-star {
   background-color: rgba(236, 236, 236, 1);
   padding-left: 15px;
   padding-top: 15px;
-  width: 228px;
+  width: 266px;
   height: 40px;
-  text-align: left;  
+  text-align: left;
   border-radius: 3px, 3px, 0px, 0px;
-  border: 1px; 
+  border: 1px;
 }
 
 .detalhes::before {
   content: "";
   position: absolute;
-  width: 242px;
+  width: 280px;
   height: 439px;
   border: 1px solid rgba(236, 236, 236, 1);
   top: 0px;
@@ -407,4 +406,21 @@ i.fa-star {
   z-index: -1;
   background-color: white;
   position: absolute;
+}
+
+.instrucao-trabalho {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-left: 1030px;
+  margin-top: 60px;
+  position: absolute;
+  color: rgba(173, 160, 160, 1);
+}
+
+.instrucao-trabalho b {
+  color: rgba(92, 92, 92, 1);
 }
