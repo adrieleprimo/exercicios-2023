@@ -1,0 +1,232 @@
+//cor de fundo
+body {
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  //cabeçalho - titulo e sub titulos
+  header {
+    width: 1100px;
+    height: 40px;
+    background-color: rgba(253, 241, 235, 1);
+    color: #fff;
+    padding: 20px 20px;
+    position: absolute;
+    top: 0;
+    margin-left: 218px;
+    z-index: 999;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  header .titulo {
+    font-size: 22px;
+    font-family: "Roboto italic", sans-serif;
+    color: rgba(114, 92, 92, 1);
+    font-weight: 400;
+    margin-top: -20px;
+    margin-left: 10px;
+  }
+  
+  header .topo {
+    font-size: 13px;
+    font-family: "Roboto italic", sans-serif;
+    color: rgba(114, 92, 92, 1);
+    font-weight: 400;
+    margin-top: -15px;
+    margin-left: 10px;
+  }
+  
+  header .sub-titulo {
+    font-size: 13px;
+    font-family: "Roboto italic", sans-serif;
+    color: rgba(114, 92, 92, 1);
+    font-weight: 400;
+    margin-left: 10px;
+    margin-top: -20px;
+  }
+  
+  //idioma
+  .idioma {
+    width: 80px;
+    height: 18px;
+    margin-left: 730px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -65px;
+    border: 1px solid rgba(204, 204, 204, 1);
+    border-radius: 3px;
+    padding: 8px;
+  }
+  
+  .idioma span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .idioma::before {
+    content: "\25BC";
+    width: 6px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: rgba(51, 51, 51, 1);
+  }
+  
+  .idioma img {
+    width: 22px;
+    height: 21px;
+    margin-left: -13px;
+  }
+  
+  //login
+  .imagem-perfil img {
+    margin-left: 1028px;
+    border-radius: 50%;
+    margin-top: -35px;
+    position: relative;
+    display: flex;
+  }
+  
+  .saudacao {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 970px;
+    color: rgba(51, 51, 51, 1);
+    margin-top: -33px;
+    margin-left: 950px;
+  }
+  
+  .email {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 970px;
+    color: rgba(51, 51, 51, 1);
+    margin-top: -10px;
+    margin-left: 852px;
+  }
+  
+  .notificacoes {
+    color: white;
+    background-color: rgba(248, 89, 89, 1);
+    width: 14px;
+    height: 14px;
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px;
+    border: 1px solid rgba(248, 89, 89, 1);
+    position: absolute;
+    margin-left: 1048px;
+    margin-top: -35px;
+  }
+  
+  //barra lateral
+  .barra-menu {
+    width: 224px;
+    height: 1701px;
+    background-color: rgba(255, 255, 255, 1);
+    background: linear-gradient(180deg, #ffb354 0%, #ee7a3a 100%);
+    background-size: 100% 89px, 100% calc(100% - 30px);
+    background-repeat: no-repeat;
+    top: 40px;
+    z-index: 998;
+    box-shadow: 3px 0 6px rgba(0, 0, 0, 0.2);
+    margin-left: -10px;
+    margin-top: -49px;
+    margin-bottom: -15px;
+    position: absolute;
+    overflow-y: auto;
+  }
+  
+  .titulo-menu {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100px;
+  }
+  
+  .titulo-menu h1 {
+    color: white;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+  }
+  .titulo-menu img {
+    width: 200px;
+    height: 258px;
+  
+    position: absolute;
+    top: 90px;
+    left: 10px;
+    bottom: 20px;
+  }
+  
+  .barra-menu ul {
+    list-style: none;
+    padding: 0;
+    top: 300px;
+    position: absolute;
+    width: 200px;
+  }
+  
+  //remoção do azul do link
+  ul li a {
+    text-decoration: none;
+    color: rgba(114, 92, 92, 1);
+  }
+  
+  .barra-menu li {
+    display: flex;
+    width: 204px;
+    align-items: center;
+    height: 50px;
+    position: relative;
+    border-bottom: 1px solid rgba(204, 204, 204, 1);
+    margin-top: 10px;
+    margin-bottom: -20px;
+    padding-left: 20px;
+    font-family: "Quicksand italic", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(114, 92, 92, 1);
+    box-shadow: 0px 1px 0.1px rgb(212, 212, 212);
+  }
+  
+  .barra-menu ul li {
+    height: 50px;
+    position: relative;
+  }
+  
+  // seções da barra lateral com efeitos ao clicar
+  .barra-menu li:active {
+    background: rgba(253, 241, 235, 1);
+  }
+  
+  .barra-menu li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 11px;
+  
+    height: 75%;
+    width: 5px;
+    background: linear-gradient(180deg, #ffb455 0%, #ed7839 100%);
+    opacity: 0;
+  }
+  .barra-menu li:hover::before,
+  .barra-menu li:active::before {
+    opacity: 1;
+  }
+  

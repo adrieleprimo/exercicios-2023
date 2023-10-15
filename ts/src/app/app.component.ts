@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'DevChuva';
+  expandido = false;
+
+  alternarResumo() {
+    this.expandido = !this.expandido;
+  }
 }
+
+
+
+
+
+
+
+

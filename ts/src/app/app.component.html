@@ -1,39 +1,4 @@
-<!--Cabeçalho-->
-<header>
-  <h5 class="topo">
-    Anais do Simpósio Latino Americano de Ciências de Alimentos
-  </h5>
-  <h2 class="titulo">
-    Anais do 13º Simpósio Latino Americano de Ciência de Alimentos
-  </h2>
-  <h5 class="sub-titulo">ISSN: 1234-5678</h5>
-  <div class="idioma">
-    <img src="../assets/language_image-removebg-preview.png" alt="mundo" />
-    <span>PT, BR</span>
-  </div>
-  <div class="imagem-perfil">
-    <img src="../assets/image.png" alt="perfil" />
-    <p class="notificacoes">2</p>
-  </div>
-  <p class="saudacao">Bem vindo!</p>
-  <p class="email">alguem12@galoascience.com</p>
-</header>
-
-<!--Barra lateral-->
-<aside class="barra-menu">
-  <div class="titulo-menu">
-    <h1>SLACA 2019</h1>
-    <img src="../assets/dewey.png" alt="logo" />
-  </div>
-  <ul>
-    <li><a href="apresentacao">Apresentação</a></li>
-    <li><a href="comites">Comitês</a></li>
-    <li><a href="autores">Autores</a></li>
-    <li><a href="eixos-tematicos">Eixos temáticos</a></li>
-    <li><a href="trabalhos">Trabalhos</a></li>
-    <li><a href="contato">Contato</a></li>
-  </ul>
-</aside>
+<app-header></app-header>
 
 <!--Titulo do trabalho-->
 <body>
@@ -89,4 +54,13 @@
       ³Instituto Nacional de Pesquisas Espaciais<br>
       ⁴Universidade Federal do Rio de Janeiro</p>
   </div>
+  <div class="resumo">
+    <h3 class="titulo-resumo"> Resumo</h3>
+    <p class="conteudo-resumo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget
+    cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus<br>
+    nisi tellus, ut viverra lorem vestibulum ut.  Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin<br>
+    ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque<br>
+    sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.  Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant... <b id="ver-mais" (click)="alternarResumo()"> {{ expandido ? 'ver menos' : 'ver mais' }}</b></p>
+  </div>
+  
 </body>
