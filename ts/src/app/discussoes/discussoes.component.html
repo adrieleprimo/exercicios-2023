@@ -1,21 +1,38 @@
 <div class="discussoes">
   <h1 class="titulo-discussoes">Discussões</h1>
   <p class="borda"></p>
-  <h3 class="subtitulo-discussoes" [ngClass]="{'hidden-element': !mostrarElementos}">Compartilhe suas ideias ou dúvidas com os autores!</h3>
+<div [ngClass]="{'hidden-element': !mostrarElementos}">
+  <h3 class="subtitulo-discussoes" >Compartilhe suas ideias ou dúvidas com os autores!</h3>
   <img src="../../assets/vectors/icone-mao.png" alt="mão" class="icone-maozinha" [ngClass]="{'hidden-element': mostrarFormulario}">
   <img src="../../assets/vectors/icones-q-a.png" alt="Q e A" class="icone-q-a" [ngClass]="{'hidden-element':mostrarFormulario}">
   <img src="../../assets/vectors/icones-pessoas.png" alt="Pessoas" class="icone-pessoas" [ngClass]="{'hidden-element': mostrarFormulario}">
   <p class="desenvolvimento-cientifico" [ngClass]="{'hidden-element': mostrarFormulario}"> Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus <br>questionamentos ou sugestões para o autor!</p>
+  <p class="linha"></p>
   <p  class="criar-topico" [ngClass]="{'btn-create-topic': !mostrarFormulario, 'parte-inferior': mostrarFormulario}" (click)="mostrarFormularioCriacao()"> criar tópico </p>
+</div>
   <img src="../../assets/icon-mais.png" alt="sinal de mais" class="icon-mais" [ngClass]="{'hidden-element': mostrarFormulario}">
   <form *ngIf="mostrarFormulario" [ngClass]="{'mostrar-partes': !mostrarFormulario}" (submit)="criarTopico()">
-    <p class="duvida-sugestao"> Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+    <p class="duvida-sugestao" > Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
     <label for="assunto" class="assunto">Assunto</label>
     <input type="text" id="assunto" name="assunto" [(ngModel)]="novoTopico.assunto" required> 
     <label for="conteudo" class="conteudo">Conteúdo</label>
     <textarea id="conteudo" name="conteudo" [(ngModel)]="novoTopico.conteudo" required></textarea>
+    <p class="linha-enviar"></p>
     <button type="submit" class="enviar">Enviar</button>
   </form>
-  <p *ngIf="topicoEnviado" class="topico-enviado">Seu tópico foi enviado com sucesso.</p>
+  <div *ngIf="topicoEnviado">
+    <p *ngIf="topicoEnviado" class="topico-enviado"  [ngClass]="{'hidden-element': mostrarFormulario}">Seu tópico foi enviado com sucesso &#x2705;</p>
+    <p class="agradecimento"  [ngClass]="{'hidden-element': mostrarFormulario}">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+    <p class="outros-trabalhos"  [ngClass]="{'hidden-element': mostrarFormulario}"><u> Descubra outros trabalhos! </u></p>
+    <p class="linha-novo-topico"></p>
+    <p  class="criar-topico-novamente" [ngClass]="{'btn-create-topic': !mostrarFormulario, 'parte-inferior': mostrarFormulario}" (click)="mostrarFormularioCriacao()"> criar novo tópico </p>
+    <p class="nova-borda-feedbacks"></p>
+    <p class="assunto-feedback">Assunto da pergunta aparece aqui</p>
+    <p class="nome-feedback">Carlos Henrique Santos</p>
+    <p class="conteudo-feedback">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão<br> e impacto de processo formativo situado impacto de processo formativo processo...</p>
+    <p class="ampulheta"> &#x23f3;</p>
+    <p class="aguardando-feedback"> Aguardando feedback dos autores <i class="fa-sharp fa-solid fa-envelopes"></i></p>
+    <p class="editar-topico"><u>Editar tópico</u></p>
+  </div>
 </div>
 

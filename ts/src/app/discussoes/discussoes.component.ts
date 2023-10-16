@@ -15,6 +15,9 @@ export class DiscussoesComponent implements OnInit {
   topicoEnviado = false;
   mostrarElementos = true; 
 
+  alternarFormulario() {
+    this.mostrarFormulario = !this.mostrarFormulario;
+  }
 
   mostrarFormularioCriacao() {
     this.mostrarFormulario = true;
@@ -23,6 +26,7 @@ export class DiscussoesComponent implements OnInit {
 
   criarTopico() {
     this.topicoEnviado = true;
+    this.mostrarFormulario = false;
   }
   constructor() { }
 
