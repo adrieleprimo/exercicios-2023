@@ -7,6 +7,7 @@ import { AnaliseSensorialComponent } from './analise-sensorial/analise-sensorial
 import { ResumoComponent } from './resumo/resumo.component';
 import { DiscussoesComponent } from './discussoes/discussoes.component';
 import { FormsModule } from '@angular/forms';
+import { TopicosComponent } from './topicos/topicos.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { FormsModule } from '@angular/forms';
     AnaliseSensorialComponent,
     ResumoComponent,
     DiscussoesComponent,
+    TopicosComponent,
   ],
   imports: [
     BrowserModule,
