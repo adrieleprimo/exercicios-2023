@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-resumo',
   templateUrl: './resumo.component.html',
-  styleUrls: ['./resumo.component.scss']
+  styleUrls: ['./resumo.component.scss'],
 })
-export class ResumoComponent implements OnInit {
+export class ResumoComponent {
+  isAmpliar = false;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  alternarResumo() {
+    this.isAmpliar = !this.isAmpliar;
   }
-
 }
