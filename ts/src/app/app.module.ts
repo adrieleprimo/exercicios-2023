@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { AnaliseSensorialComponent } from './analise-sensorial/analise-sensorial.component';
 import { ResumoComponent } from './resumo/resumo.component';
+import { DiscussoesComponent } from './discussoes/discussoes.component';
 
 
 
@@ -14,6 +15,7 @@ import { ResumoComponent } from './resumo/resumo.component';
     HeaderComponent,
     AnaliseSensorialComponent,
     ResumoComponent,
+    DiscussoesComponent,
   ],
   imports: [
     BrowserModule
