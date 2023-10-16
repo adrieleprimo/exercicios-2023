@@ -1,10 +1,21 @@
 <div class="discussoes">
   <h1 class="titulo-discussoes">Discussões</h1>
-  <h3 class="subtitulo-discussoes">Compartilhe suas ideias ou dúvidas com os autores!</h3>
-  <img src="../../assets/vectors/icone-mao.png" alt="mão" class="icone-maozinha">
-  <img src="../../assets/vectors/icones-q-a.png" alt="Q e A" class="icone-q-a">
-  <img src="../../assets/vectors/icones-pessoas.png" alt="Pessoas" class="icone-pessoas">
-  <p class="desenvolvimento-cientifico"> Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus <br>questionamentos ou sugestões para o autor!</p>
-  <p class='criar-topico'> criar tópico </p>
-  <img src="../../assets/icon-mais.png" alt="sinal de mais" class="icon-mais">
+  <p class="borda"></p>
+  <h3 class="subtitulo-discussoes" [ngClass]="{'hidden-element': !mostrarElementos}">Compartilhe suas ideias ou dúvidas com os autores!</h3>
+  <img src="../../assets/vectors/icone-mao.png" alt="mão" class="icone-maozinha" [ngClass]="{'hidden-element': mostrarFormulario}">
+  <img src="../../assets/vectors/icones-q-a.png" alt="Q e A" class="icone-q-a" [ngClass]="{'hidden-element':mostrarFormulario}">
+  <img src="../../assets/vectors/icones-pessoas.png" alt="Pessoas" class="icone-pessoas" [ngClass]="{'hidden-element': mostrarFormulario}">
+  <p class="desenvolvimento-cientifico" [ngClass]="{'hidden-element': mostrarFormulario}"> Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus <br>questionamentos ou sugestões para o autor!</p>
+  <p  class="criar-topico" [ngClass]="{'btn-create-topic': !mostrarFormulario, 'parte-inferior': mostrarFormulario}" (click)="mostrarFormularioCriacao()"> criar tópico </p>
+  <img src="../../assets/icon-mais.png" alt="sinal de mais" class="icon-mais" [ngClass]="{'hidden-element': mostrarFormulario}">
+  <form *ngIf="mostrarFormulario" [ngClass]="{'mostrar-partes': !mostrarFormulario}" (submit)="criarTopico()">
+    <p class="duvida-sugestao"> Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+    <label for="assunto" class="assunto">Assunto</label>
+    <input type="text" id="assunto" name="assunto" [(ngModel)]="novoTopico.assunto" required> 
+    <label for="conteudo" class="conteudo">Conteúdo</label>
+    <textarea id="conteudo" name="conteudo" [(ngModel)]="novoTopico.conteudo" required></textarea>
+    <button type="submit" class="enviar">Enviar</button>
+  </form>
+  <p *ngIf="topicoEnviado" class="topico-enviado">Seu tópico foi enviado com sucesso.</p>
 </div>
+

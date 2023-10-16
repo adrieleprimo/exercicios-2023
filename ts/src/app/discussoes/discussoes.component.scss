@@ -9,7 +9,7 @@
   margin-left: 244px;
   margin-top: 40px;
   position: relative;
-  background-color: rgba(236, 236, 236, 1);
+  background-color: rgba(253, 241, 235, 1);
   width: 1048px;
   padding-left: 100px;
   padding: 10px;
@@ -27,8 +27,8 @@
   color: rgba(237, 120, 57, 1);
   position: relative;
   margin-left: 40px;
-  margin-top: -13px;
-  border: 1px solid rgba(236, 236, 236, 1);
+  margin-top: -360px;
+  //border: 1px solid rgba(236, 236, 236, 1);
   padding-bottom: 200px;
   border-top: none;
   padding-top: 10px;
@@ -84,13 +84,103 @@
   color: white;
   border: 5px solid rgba(237, 120, 57, 1);
   border-radius: 6px;
-  padding:4px;
+  padding: 4px;
   background-color: rgba(237, 120, 57, 1);
   padding-left: 20px;
 }
 
-.icon-mais{
+.icon-mais {
   margin-left: 705px;
-  margin-top: -28px;
+  margin-top: -26px;
   position: absolute;
+}
+
+.parte-inferior {
+  display: none;
+}
+
+.btn-create-topic {
+  cursor: pointer;
+}
+
+.hidden-element {
+  display: none;
+}
+
+.borda {
+  border: 1px solid rgba(236, 236, 236, 1);
+  position: relative;
+  padding: 120px;
+  padding-left: 5px;
+  height: 100px;
+  margin-left: 245px;
+  margin-right: 22px;
+  border-left: 1px solid rgba(236, 236, 236, 1);
+  top: -20px;
+  border-top: none;
+}
+
+.assunto {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(237, 120, 57, 1);
+  margin-left: 280px;
+  position: absolute;
+  margin-top: -320px;
+}
+#assunto {
+  margin-top: -295px;
+  position: absolute;
+  margin-left: 280px;
+  padding-right: 830px;
+  padding-bottom: 15px;
+  border-radius: 3px;
+  color: rgba(236, 236, 236, 1);
+  opacity: 35%;
+}
+
+.conteudo {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(237, 120, 57, 1);
+  position: absolute;
+  margin-top: -240px;
+  margin-left: 280px;
+}
+
+#conteudo {
+  position: absolute;
+  margin-top: -210px;
+  margin-left: 280px;
+  border-radius: 3px;
+  padding-right: 848px;
+  padding-bottom: 60px;
+  opacity: 40%;
+}
+
+.enviar {
+  position: relative;
+  top: -80px;
+  left: 700px;
+}
+
+.duvida-sugestao {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(92, 92, 92, 1);
+  position: absolute;
+  left: 550px;
+  margin-top: -360px;
 }
