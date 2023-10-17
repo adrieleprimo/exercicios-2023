@@ -47,25 +47,27 @@
     src="../../assets/icon-mais.png"
     alt="sinal de mais"
     class="icon-mais"
-    [ngClass]="{ 'hidden-element': mostrarFormulario }"
+    [ngClass]="{ 'hidden-element': mostrarFormulario || topicoEnviado }"
   />
-  <form classe="btn-create-topic"
+  <form 
     *ngIf="mostrarFormulario"
-    [ngClass]="{ 'mostrar-partes': !mostrarFormulario }"
+    [ngClass]="{ 'mostrar-partes': mostrarFormulario }"
     (submit)="criarTopico()"
   >
     <p class="duvida-sugestao">
       Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!
     </p>
-    <label for="assunto" class="assunto">Assunto</label>
+    
     <input
       type="text"
       id="assunto"
       name="assunto"
       [(ngModel)]="novoTopico.assunto"
       required
-      placeholder="Defina um tópico sucinto para notificar os autores..."
+      placeholder='Defina um tópico sucinto para notificar os autores...'
+      class="subject"
     />
+    <label for="assunto" class="assunto">Assunto</label>
     <label for="conteudo" class="conteudo">Conteúdo</label>
     <textarea
       id="conteudo"

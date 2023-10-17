@@ -33,16 +33,13 @@
   position: relative;
   margin-left: 40px;
   margin-top: 20px;
-  //border: 1px solid rgba(236, 236, 236, 1);
   padding-bottom: 200px;
   border-top: none;
   padding-top: 10px;
   padding-left: 285px;
   padding-right: 342px;
-  //bottom: -550px;
   width: 440px;
   left: 205px;
-  //top: 1px;
 }
 
 .icone-maozinha {
@@ -102,8 +99,11 @@
 }
 
 .parte-inferior {
-  display: none;
+  display: block;
 }
+
+
+
 
 .btn-create-topic {
   cursor: pointer;
@@ -125,7 +125,6 @@
   border-left: 1px solid rgba(236, 236, 236, 1);
   margin-top: -20px;
   border-top: none;
-  z-index: 2;
 }
 
 .assunto {
@@ -168,12 +167,11 @@ input::placeholder {
   line-height: 18px;
   letter-spacing: 0em;
   text-align: left;
-
-
   color: rgba(92, 92, 92, 1);
   margin-left: 15px;
   margin-top: -1px;
   opacity: 80%;
+  width: 350px;
 }
 
 .conteudo {
@@ -190,7 +188,6 @@ input::placeholder {
 }
 
 #conteudo {
-  //position: fixed;
   margin-top: 190px;
   margin-left: 280px;
   border-radius: 3px;
@@ -312,7 +309,7 @@ input::placeholder {
 .linha-novo-topico {
   border: 1px solid rgba(236, 236, 236, 1);
   background-color: rgba(236, 236, 236, 1);
-  position: relative;
+  position: absolute;
   top: 185px;
   margin-left: 280px;
   margin-right: 45px;
@@ -409,5 +406,3 @@ input::placeholder {
   margin-top: 130px;
   color: rgba(237, 120, 57, 1);
 }
-
-
