@@ -33,7 +33,7 @@
     </p>
     <p class="linha"></p>
     <p
-      class="criar-topico"
+      class="btn-create-topic"
       [ngClass]="{
         'btn-create-topic': !mostrarFormulario,
         'parte-inferior': mostrarFormulario
@@ -49,7 +49,7 @@
     class="icon-mais"
     [ngClass]="{ 'hidden-element': mostrarFormulario }"
   />
-  <form
+  <form classe="btn-create-topic"
     *ngIf="mostrarFormulario"
     [ngClass]="{ 'mostrar-partes': !mostrarFormulario }"
     (submit)="criarTopico()"

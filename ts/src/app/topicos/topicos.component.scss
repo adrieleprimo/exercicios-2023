@@ -1,4 +1,4 @@
-.ops-topic {
+.titulo-topico-um {
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -24,7 +24,7 @@
   color: rgba(92, 92, 92, 1);
 }
 
-.conteudo-topico-um {
+.pergunta-um {
   font-family: "Quicksand", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -49,15 +49,15 @@
   box-shadow: 2px 2px 2px 2px rgba(236, 236, 236, 1);
 }
 
-.reticencias {
-  margin-top: 8px;
-  left: 310px;
-  position: relative;
+.reticencias-comentario-um {
+  margin-top: -13px;
+  left: 318px;
+  position: absolute;
   cursor: pointer;
 }
 
 .fa-heart {
-  margin-top: 5px;
+  margin-top: -87px;
   margin-left: 340px;
   position: absolute;
   border: 1px solid rgba(237, 120, 57, 1);
@@ -79,9 +79,9 @@
   letter-spacing: 0em;
   text-align: left;
   color: rgba(117, 117, 117, 1);
-  margin-top: -22px;
+  margin-top: -87px;
   margin-left: 400px;
-  position: relative;
+  position: absolute;
 }
 
 .uma-resposta {
@@ -92,52 +92,339 @@
   letter-spacing: 0em;
   text-align: left;
   color: rgba(117, 117, 117, 1);
-  margin-top: -33px;
+  margin-top: -87px;
   margin-left: 445px;
+  position: absolute;
 }
 
 .respostas {
-  display: none !important;
+  display: none;
   position: absolute;
 }
 
-.nome-resposta-topico-um {
-  font-family: "Quicksand", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: rgba(77, 77, 77, 1);
-  margin-top: 10px;
-  margin-left: 310px;
-  position: absolute;
-}
-
-.resposta-topico-um {
-  font-family: "Quicksand", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: rgba(77, 77, 77, 1);
-  margin-top: 40px;
-  margin-left: 310px;
-  position: absolute;
-}
-
-.borda-resposta-um{
+.borda-topico-dois {
   border: 1px solid rgba(236, 236, 236, 1);
-  border-top: none;
-  position: relative;
-  padding: 70px;
-  padding-left: 101px;
-  margin-left: 312px;
+  position: absolute;
+  padding: 100px;
+  margin-left: 320px;
   left: -50px;
-  margin-top: -2px;
+  margin-top: 16px;
   padding-right: 920px;
   border-radius: 3px;
   box-shadow: 2px 2px 2px 2px rgba(236, 236, 236, 1);
+}
 
+.ops-topic-subject {
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: relative;
+  top: 53px;
+  left: 310px;
+  color: rgba(237, 120, 57, 1);
+}
+
+.nome-topico-dois {
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: relative;
+  top: 40px;
+  left: 310px;
+  color: rgba(92, 92, 92, 1);
+}
+
+.pergunta-dois {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(77, 77, 77, 1);
+  margin-top: 50px;
+  left: 316px;
+  position: absolute;
+}
+
+#heart-dois {
+  margin-top: 115px;
+  margin-left: 340px;
+  position: absolute;
+  border: 1px solid rgba(237, 120, 57, 1);
+  background-color: rgba(237, 120, 57, 1);
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 3px;
+  color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  box-shadow: 2px 2px 2px 2px rgba(236, 236, 236, 1);
+}
+
+.reticencias-dois {
+  margin-top: 118px;
+  left: 318px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.dois-like {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 14px;
+  font-weight: 350;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(117, 117, 117, 1);
+  margin-top: 118px;
+  margin-left: 400px;
+  position: absolute;
+}
+
+.dois-resposta {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 14px;
+  font-weight: 350;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(117, 117, 117, 1);
+  margin-top: 118px;
+  margin-left: 445px;
+  position: absolute;
+}
+
+//respostas
+.nome-resposta-um {
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(92, 92, 92, 1);
+  position: absolute;
+  margin-top: 160px;
+  margin-left: 300px;
+}
+
+.expandir-resposta-um {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(77, 77, 77, 1);
+  margin-top: 220px;
+  margin-left: 300px;
+  position: absolute;
+  z-index: 20px;
+}
+
+.borda-resposta-um {
+  border: 1px solid rgba(236, 236, 236, 1);
+  position: absolute;
+  padding: 70px;
+  padding-left: 101px;
+  margin-left: 312px;
+  left: -44px;
+  margin-top: 150px;
+  padding-right: 920px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px 2px rgba(236, 236, 236, 1);
+  background-color: rgba(231, 231, 231, 1);
+  opacity: 30%;
+}
+
+.autor {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 160px;
+  margin-left: 1150px;
+  position: absolute;
+  color: rgba(237, 120, 57, 1);
+}
+
+.simbolo-autor {
+  margin-top: 160px;
+  margin-left: 1220px;
+  position: absolute;
+}
+
+.nome-resposta-autor {
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: absolute;
+  color: rgba(92, 92, 92, 1);
+  margin-top: 310px;
+  margin-left: 300px;
+}
+
+.borda-resposta-dois {
+  border: 5px solid rgba(236, 236, 236, 1);
+  position: absolute;
+  padding: 70px;
+  padding-left: 95px;
+  margin-left: 312px;
+  left: -44px;
+  margin-top: 293px;
+  padding-right: 920px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 1px rgba(236, 236, 236, 1);
+  background-color: white;
+  opacity: 30%;
+}
+
+.resposta-autor {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 355px;
+  margin-left: 300px;
+  position: absolute;
+}
+
+.borda-coautor {
+  border: 1px solid rgba(236, 236, 236, 1);
+  position: absolute;
+  padding: 70px;
+  padding-left: 101px;
+  padding-bottom: 100px;
+  margin-left: 312px;
+  left: -44px;
+  margin-top: 444px;
+  padding-right: 920px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px 2px rgba(236, 236, 236, 1);
+  background-color: rgba(231, 231, 231, 1);
+  opacity: 30%;
+  z-index: 1;
+}
+
+.nome-coautor {
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(77, 77, 77, 1);
+  margin-top: 465px;
+  margin-left: 300px;
+  position: absolute;
+}
+
+.resposta-coautor {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 490px;
+  margin-left: 300px;
+  position: absolute;
+}
+
+.coautor {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: right;
+  position: absolute;
+  color: rgba(237, 120, 57, 1);
+  margin-top: 454px;
+  margin-left: 1150px;
+  z-index: 2;
+}
+
+.simbolo-coautor {
+  position: absolute;
+  margin-top: 455px;
+  margin-left: 1220px;
+  z-index: 2;
+}
+
+.nome-segundo-coautor {
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: absolute;
+  color: rgba(92, 92, 92, 1);
+  margin-top: 640px;
+  margin-left: 300px;
+}
+
+.resposta-segundo-coautor {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: absolute;
+  margin-top: 679px;
+  margin-left: 300px;
+}
+
+.segundo-coautor {
+  position: absolute;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: rgba(237, 120, 57, 1);
+  margin-top: 640px;
+  margin-left: 1150px;
+  z-index: 2;
+}
+
+.segundo-simbolo-coautor {
+  position: absolute;
+  margin-top: 640px;
+  margin-left: 1220px;
+  z-index: 2;
+}
+
+.borda-dois-coautor{
+  border: 1px solid rgba(236, 236, 236, 1);
+  position: absolute;
+  padding: 70px;
+  padding-left: 101px;
+  padding-bottom: 100px;
+  margin-left: 312px;
+  left: -44px;
+  margin-top: 620px;
+  padding-right: 920px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px 2px rgba(236, 236, 236, 1);
+  background-color: rgba(231, 231, 231, 1);
+  opacity: 30%;
+  z-index: 1;
 }
