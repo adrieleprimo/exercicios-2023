@@ -428,3 +428,18 @@
   opacity: 30%;
   z-index: 1;
 }
+
+.marca{
+
+  position: relative;
+  margin-left: 288px;
+  margin-top: 200px;
+  left:-40px;
+  margin-right: 10px;
+  z-index: 1;
+  border-radius: 3px;
+ 
+}
+.marca.move-down {
+  margin-top: 850px;
+}
