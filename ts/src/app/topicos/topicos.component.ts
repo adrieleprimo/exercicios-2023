@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopicosComponent implements OnInit {
 
+  mostrarRespostas = false; 
+
+  toggleRespostas() {
+    this.mostrarRespostas = !this.mostrarRespostas;
+  }
+
   constructor() { }
 
   ngOnInit(): void {

@@ -1,6 +1,32 @@
 <div class="answered-topic">
-    <p class="titulo-topico-um">Assunto da pergunta aparece aqui</p>
-  <!-- <p class="nome-topico-um">Carlos Henrique Santos</p>
-    <p class="conteudo-topico-um">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto <br>
-    de processo formativo situado impacto de processo formativo processo...</p>-->  
+  <p class="borda-topico-um"></p>
+  <p class="ops-topic">Assunto da pergunta aparece aqui</p>
+  <p class="nome-topico-um">Carlos Henrique Santos</p>
+  <p class="conteudo-topico-um">
+    Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da
+    análise da dimensão e impacto <br />
+    de processo formativo situado impacto de processo formativo processo...
+  </p>
+  <img
+    src="../../assets/mais-informações.png"
+    alt="Reticências"
+    class="reticencias"
+    (click)="toggleRespostas()"
+  />
+  <i class="fa fa-heart"></i>
+  <p class="um-like">1 like</p>
+  <p class="uma-resposta">1 resposta</p>
+
+  <div class="respostas" [ngClass]="{ respostas: !mostrarRespostas }">
+    <p class="nome-resposta-topico-um">Adriano da Silva</p>
+    <p class="resposta-topico-um">
+      Resposta do autor é aqui. Relato inscreve-se no campo da análise da
+      dimensão e impacto de processo formativo situado impacto de processo
+      <br />
+      formativo processo resente relato inscreve-se no campo da análise da
+      dimensão e impacto de processo formativo situado impacto de processo<br />
+      formativo processo.
+    </p>
+    <p class="borda-resposta-um"></p>
+  </div>
 </div>
