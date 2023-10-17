@@ -1,5 +1,5 @@
-  <div class="topicos">
-    <div class="topico-um">
+<div class="topicos">
+  <div class="topico-um">
     <p class="borda-topico-um"></p>
     <h4 class="titulo-topico-um">Assunto da pergunta aparece aqui</h4>
     <h5 class="nome-topico-um">Carlos Henrique Santos</h5>
@@ -8,61 +8,100 @@
       análise da dimensão e impacto <br />
       de processo formativo situado impacto de processo formativo processo...
     </h6>
-    <img src="../../assets/mais-informações.png" alt="Reticências" class="reticencias-comentario-um"/>
-    </div>
-    <div class="answered-topic">
+    <img
+      src="../../assets/mais-informações.png"
+      alt="Reticências"
+      class="reticencias-comentario-um"
+    />
+  </div>
+  <div class="answered-topic">
     <p class="borda-topico-dois"></p>
     <h4 class="ops-topic-subject">Assunto da pergunta aparece aqui</h4>
-    </div>
-    <h5 class="nome-topico-dois">Carlos Henrique Santos</h5>
-    <h6 class="pergunta-dois">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo <br>
-      formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto <br> de processo formativo
-      situado impacto de processo formativo processo?</h6>
-      <i class="fa fa-heart"></i>
- 
-    <i class="fa fa-heart" id="heart-dois"></i>
-    <p class="um-like">1 like</p>
-    <p class="uma-resposta">1 resposta</p>
-    <img src="../../assets/mais-informações.png" alt="Reticências" class="reticencias-dois" (click)="toggleRespostas()">
-    <p class="dois-like">4 likes</p>
-    <p class="dois-resposta">4 respostas</p>
-    <div class="comments-container" [ngClass]="{ respostas: !mostrarRespostas }">
-      <h4 class="nome-resposta-um">Adriano da Silva</h4>
-      <h5 class="expandir-resposta-um">
-        Resposta do autor é aqui. Relato inscreve-se no campo da análise da
-        dimensão e impacto de processo formativo situado impacto de processo
-        <br />
-        formativo processo resente relato inscreve-se no campo da análise da
-        dimensão e impacto de processo formativo situado impacto de processo<br />
-        formativo processo.
-      </h5>
-      <p class="borda-resposta-um"></p>
-      <h6 class="autor">Autor</h6>
-      <img src="../../assets/.png" alt="Simbolo Autor" class="simbolo-autor">
-      <h4 class="nome-resposta-autor">Carlos Henrique Santos</h4>
-      <h5 class="resposta-autor">Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo <br>
-      formativo.
-      <br>Obrigada pela resposta, muito interessante o seu trabalho! </h5>
-      <p class="borda-resposta-dois"></p>
-      <h4 class="nome-coautor">Carmila Ferreira Andrade</h4>
-      <h5 class="resposta-coautor">Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de <br>
-         processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de ´
-         <br>processo formativo processo.
-<br>
-        <br>Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo 
-        <br>situado impacto de processo formativo processo.</h5>
-        <h6 class="coautor">Coautor</h6>
-        <img src="../../assets/.png" alt="Simbolo coautor" class="simbolo-coautor">
-        <p class="borda-coautor"></p>
-
-        <h4 class="nome-segundo-coautor">Ana Carolina</h4>
-        <h5 class="resposta-segundo-coautor"> Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo <br>
-          formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo<br>
-           formativo processo.</h5>
-          <h6 class="segundo-coautor">Coautor</h6>
-          <img src="../../assets/.png" alt="Simbolo coautor" class="segundo-simbolo-coautor">
-        <p class="borda-dois-coautor"></p>
-      
-    </div>
-    <img src="../../assets/imagem-footer.png" alt="logo" class="marca" [ngClass]="{ 'move-down': mostrarRespostas }">
   </div>
+  <h5 class="nome-topico-dois">Carlos Henrique Santos</h5>
+  <h6 class="pergunta-dois">
+    Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da
+    análise da dimensão e impacto de processo <br />
+    formativo situado impacto de processo formativo processo resente relato
+    inscreve-se no campo da análise da dimensão e impacto <br />
+    de processo formativo situado impacto de processo formativo processo?
+  </h6>
+  <i class="fa fa-heart"></i>
+
+  <i class="fa fa-heart" id="heart-dois"></i>
+  <p class="um-like">1 like</p>
+  <p class="uma-resposta">1 resposta</p>
+  <img
+    src="../../assets/mais-informações.png"
+    alt="Reticências"
+    class="reticencias-dois"
+    (click)="toggleRespostas()"
+  />
+  <p class="dois-like">4 likes</p>
+  <p class="dois-resposta">4 respostas</p>
+  <div class="comments-container" [ngClass]="{ respostas: !mostrarRespostas }">
+    <h4 class="nome-resposta-um">Adriano da Silva</h4>
+    <h5 class="expandir-resposta-um">
+      Resposta do autor é aqui. Relato inscreve-se no campo da análise da
+      dimensão e impacto de processo formativo situado impacto de processo
+      <br />
+      formativo processo resente relato inscreve-se no campo da análise da
+      dimensão e impacto de processo formativo situado impacto de processo<br />
+      formativo processo.
+    </h5>
+    <p class="borda-resposta-um"></p>
+    <h6 class="autor">Autor</h6>
+    <img src="../../assets/.png" alt="Simbolo Autor" class="simbolo-autor" />
+    <h4 class="nome-resposta-autor">Carlos Henrique Santos</h4>
+    <h5 class="resposta-autor">
+      Consegui entender melhor agora! Parece que a variação da análise da
+      dimensão e impacto de processo formativo situado impacto de processo
+      <br />
+      formativo.
+      <br />Obrigada pela resposta, muito interessante o seu trabalho!
+    </h5>
+    <p class="borda-resposta-dois"></p>
+    <h4 class="nome-coautor">Carmila Ferreira Andrade</h4>
+    <h5 class="resposta-coautor">
+      Também ínteressante lembrar que o relato inscreve-se no campo da análise
+      da dimensão e impacto de processo formativo situado impacto de <br />
+      processo formativo processo resente relato inscreve-se no campo da análise
+      da dimensão e impacto de processo formativo situado impacto de ´
+      <br />processo formativo processo.
+      <br />
+      <br />Situado impacto de processo formativo processo resente relato
+      inscreve-se no campo da análise da dimensão e impacto de processo
+      formativo <br />situado impacto de processo formativo processo.
+    </h5>
+    <h6 class="coautor">Coautor</h6>
+    <img
+      src="../../assets/.png"
+      alt="Simbolo coautor"
+      class="simbolo-coautor"
+    />
+    <p class="borda-coautor"></p>
+
+    <h4 class="nome-segundo-coautor">Ana Carolina</h4>
+    <h5 class="resposta-segundo-coautor">
+      Resposta do autor é aqui. Relato inscreve-se no campo da análise da
+      dimensão e impacto de processo formativo situado impacto de processo
+      <br />
+      formativo processo resente relato inscreve-se no campo da análise da
+      dimensão e impacto de processo formativo situado impacto de processo<br />
+      formativo processo.
+    </h5>
+    <h6 class="segundo-coautor">Coautor</h6>
+    <img
+      src="../../assets/.png"
+      alt="Simbolo coautor"
+      class="segundo-simbolo-coautor"
+    />
+    <p class="borda-dois-coautor"></p>
+  </div>
+  <img
+    src="../../assets/imagem-footer.png"
+    alt="logo"
+    class="marca"
+    [ngClass]="{ 'move-down': mostrarRespostas }"
+  />
+</div>

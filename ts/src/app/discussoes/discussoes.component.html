@@ -1,7 +1,6 @@
 <div class="discussoes">
   <h1 class="titulo-discussoes">Discussões</h1>
   <p class="borda"></p>
-
   <div [ngClass]="{ 'hidden-element': !mostrarElementos }">
     <h3 class="subtitulo-discussoes">
       Compartilhe suas ideias ou dúvidas com os autores!
@@ -49,7 +48,7 @@
     class="icon-mais"
     [ngClass]="{ 'hidden-element': mostrarFormulario || topicoEnviado }"
   />
-  <form 
+  <form
     *ngIf="mostrarFormulario"
     [ngClass]="{ 'mostrar-partes': mostrarFormulario }"
     (submit)="criarTopico()"
@@ -57,14 +56,14 @@
     <p class="duvida-sugestao">
       Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!
     </p>
-    
+
     <input
       type="text"
       id="assunto"
       name="assunto"
       [(ngModel)]="novoTopico.assunto"
       required
-      placeholder='Defina um tópico sucinto para notificar os autores...'
+      placeholder="Defina um tópico sucinto para notificar os autores..."
       class="subject"
     />
     <label for="assunto" class="assunto">Assunto</label>
@@ -99,7 +98,10 @@
     >
       <u> Descubra outros trabalhos! </u>
     </p>
-    <p [ngClass]="{ 'hidden-element': mostrarFormulario }" class="linha-novo-topico"></p>
+    <p
+      [ngClass]="{ 'hidden-element': mostrarFormulario }"
+      class="linha-novo-topico"
+    ></p>
     <p
       class="criar-topico-novamente"
       [ngClass]="{
