@@ -2,8 +2,8 @@ name: ts
 
 on:
   push:
-    paths:
-      - 'ts/**'
+    branches:
+    - main
 
 jobs:
   build:
